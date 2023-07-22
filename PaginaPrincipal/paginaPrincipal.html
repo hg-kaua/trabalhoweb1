@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina principal</title>
+    <link rel="stylesheet" href="/PaginaPrincipal/paginaPrincipal.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul class="nav-bar">
+                <li> <a href="paginaPrincipal.html">Home</a></li>
+                <li><a href="suasContas.html">Suas contas</a></li>
+                <li> <a href="configuracao.html">Configurações</a></li>
+            </ul>
+        </nav>
+        <header>
+        <div>
+            <h1>Bem vindo a sua pagina, <?php echo $nome; ?></h1>
+        </div>
+        <div>
+            <h2>Informações do usuario</h2>
+        </div>
+        </header>
+        <ul>
+            <li>
+                <p>Email: <?php echo $email; ?></p>
+            </li>
+            <li>
+                <p>Nome: <?php echo $nome; ?></p>
+            </li>
+            <li>
+                <p>cpf: <?php echo $cpf; ?></p>
+            </li>
+            <li>
+                <p>Peso: <?php echo $peso; ?></p>
+            </li>
+            <li>
+                <p>Altura: <?php echo $altura; ?></p>
+            </li>
+            <li>
+                <p>Horas de sono: <?php echo $horasdesono; ?></p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
